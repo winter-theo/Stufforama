@@ -21,7 +21,6 @@ def update_total(*args):
         try:
             val = int(var.get().replace(".", ""))
             total += val
-            # reformater proprement
             if var.get() != format_number(val):
                 var.set(format_number(val))
         except ValueError:
@@ -64,7 +63,7 @@ def on_drag(event, idx):
         new_y = widget.winfo_y() + dy
         widget.place(x=new_x, y=new_y)
 
-# --- Fenêtre ---
+# Fenêtre
 root = tk.Tk()
 root.title("Stufforama")
 root.resizable(False, False)
