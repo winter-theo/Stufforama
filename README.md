@@ -1,29 +1,55 @@
 ﻿# Stufforama
 
-**Stufforama** est un petit logiciel pour calculer en temps réel le prix de votre stuff sur **Dofus Rétro**.  
-Entrez simplement le prix de chaque item et le total s’affiche automatiquement en bas de l’écran.
+**Stufforama** est un petit logiciel en **Python (Tkinter)** pour calculer en temps réel le prix de votre stuff sur **Dofus Rétro**.  
+Vous remplissez les prix de vos objets (17 cases) et le total s’affiche automatiquement.
 
 ---
 
 ## 🔹 Fonctionnalités
-- 17 cases pour saisir les prix de vos objets.
+- 17 cases pour saisir les prix des items.
 - Formatage automatique avec des points (`.`) pour la lisibilité (ex: `1.234.567`).
-- Total calculé en direct et affiché en bas de l’écran.
-- Interface avec fond visuel d’inventaire.
-- Mode placement (optionnel) pour ajuster les cases à votre propre image d’inventaire.
+- Total affiché en bas de l’interface.
+- Fond visuel d’inventaire (modifiable).
+- Mode placement (**touche P**) pour déplacer les cases et sauvegarder leur position.
 
 ---
 
-## 🖥️ Télécharger le logiciel
-👉 [Télécharger la dernière version](../../releases) (fichier `.exe` prêt à lancer).  
+## 🛠️ Installation
 
-Il vous suffit de télécharger **Stufforama.exe** puis de double-cliquer dessus.  
-Aucune installation de Python n’est nécessaire.
+1. **Cloner le projet**
+   ```bash
+   git clone https://github.com/<ton-user>/Stufforama.git
+   cd Stufforama
+   ```
+
+2. **Installer les dépendances**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Lancer l’application**
+   ```bash
+   python app/main.py
+   ```
 
 ---
 
-## 🛠️ Utilisation
-1. Lancez `Stufforama.exe`.
-2. Remplissez les cases avec les prix de vos items (en Kamas).
-3. Le total se calcule automatiquement.
-4. (Optionnel) Activez le mode placement avec la touche **P** si vous souhaitez déplacer les cases, puis sauvegardez.
+## 📂 Structure du projet
+
+```
+Stufforama/
+│  README.md
+│  requirements.txt
+│  .gitignore
+│
+└─ app/
+   ├─ assets/           # Images (inventaire, icône…)
+   ├─ main.py           # Code principal
+   └─ positions.json    # Coordonnées sauvegardées des champs
+```
+
+---
+
+## 📜 Licence
+Distribué sous licence **MIT**.  
+Voir le fichier [LICENSE](LICENSE) pour plus d’informations.
