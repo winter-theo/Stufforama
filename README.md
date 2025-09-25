@@ -5,6 +5,12 @@ Vous remplissez les prix de vos objets (17 cases) et le total s’affiche automa
 
 ---
 
+## Aperçu du logiciel
+
+![Capture d’écran](app/assets/app_screenshot.png)
+
+---
+
 ## 🔹 Fonctionnalités
 - 17 cases pour saisir les prix des items.
 - Formatage automatique avec des points (`.`) pour la lisibilité (ex: `1.234.567`).
